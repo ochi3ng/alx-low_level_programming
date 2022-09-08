@@ -1,16 +1,17 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
  *
- *  * main - check the code for Holberton School students.
+ *  * main - Entry point
  *
  *   *
  *
- *    * Return: Always 0.
+ *    * Return: Always 0 (Success)
  *
- *     */
+ *
+ */
 int main(void)
 {
-       	print_most_numbers();
+	puts("\"Programming is like building a multilingual puzzle");
 
-	    return (0);
+			return (0);
 }
