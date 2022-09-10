@@ -3,22 +3,24 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always  (Success)
  */
 int main(void)
 {
-int d;
+	int c;
 
-for (d = '0'; d <= '9'; d++)
-{
-	putchar(d);
+	for (c = '0'; c <= '9'; c++)
+	{
+		putchar(c);
 
-if (d != '9')
-        {
-	putchar(',');
-	putchar(' ');
+		if (c != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-}
-        putchar('\n');
-return (0);
+
+	putchar('\n');
+
+	return (0);
 }
