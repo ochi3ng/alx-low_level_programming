@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - check the code
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	char c = " _putchar"
+	char *ch = "main";
 
-		while (c)
-		{
-			_putchar(*c);
-			c++;
-		}
+	while (*ch)
+	{
+		_putchar(*ch);
+		ch++;
+	}
 	_putchar('\n');
 
-	return(0)
+	return (0);
 }
