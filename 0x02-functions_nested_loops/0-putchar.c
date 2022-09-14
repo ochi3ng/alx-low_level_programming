@@ -1,20 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - prints the string "_putchar" from a character array.
  *
- * Return: Always 0.
+ * Return: 0 on success
  */
 int main(void)
 {
-	char *ch = "main";
-
-	while (*ch)
-	{
-		_putchar(*ch);
-		ch++;
-	}
-	_putchar('\n');
-
-	return (0);
+	char *sh = "_putchar";
+	while (*sh)
+}
+_putchar(*sh);
+sh++;
+}
+_putchar('\n');
+return (0);
 }
