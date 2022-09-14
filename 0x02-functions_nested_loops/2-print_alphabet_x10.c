@@ -7,14 +7,14 @@
  */
 void print_alphabet(void)
 {
-	char Alph;
+	void print_alphabet_x10(void)
+	char alph;
 
 	while (count++ <= 9)
 	{
-		for (Alph = 'a'; Alph <= 'z'; Alph++)
-		{
-			_putchar(Alph);
-		}
+		for (alph = 'a'; alph <= 'z'; alph++)
+			_putchar(alph);
+	
 		_putchar('\n');
 	}
 }
