@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - prints the string "_putchar" from a character array.
  *
@@ -7,9 +6,9 @@
  */
 int main(void)
 {
-	char *sh = "_putchar";
-	while (*sh)
-}
+char *sh = "_putchar";
+while (*sh)
+{
 _putchar(*sh);
 sh++;
 }
