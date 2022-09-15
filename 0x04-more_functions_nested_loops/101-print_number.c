@@ -1,6 +1,3 @@
-/*
- * File: 101-print_number.c
- */
 #include "main.h"
 
 /**
@@ -9,16 +6,42 @@
  */
 void print_number(int n)
 {
-	unsigned int num = n;
+	unsigned int j;
+	int a, b;
 
-	if (n < 0)
+	b = 10;
+
+	if (n < 10 && n >= 0)
 	{
+		_putchar (n + '0');
+	}
+	else if (n > -10 && n < 0)
+	{
+		n = n - 2 * n;
 		_putchar('-');
-		num = -num;
+		_putchar (n + '0');
 	}
 
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	else
+	{
+		if (n < 0)
+		{
+			n = n * -1;
+			_putchar ('-');
+		}
+		j = n;
+		while (j / b > 9)
+		{
+			b = b * 10;
+		}
+		while (b > 0)
+		{
+			a = j / b;
+			j = j % b;
+			_putchar (a + '0');
+			b = b / 10;
+		}
+	}
 }
+		
+
