@@ -1,20 +1,31 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *  _isupper - checks for uppercase character
- *  @c: Variable text
- *  Return: Always 0.
+ * main - prints the string "_putchar" from a character array.
+ *
+ * Return: 0 on success
  */
-int _isupper(int c)
+
+int main(void)
+
 {
-	if (c >= 'A' && c <= 'Z')
+
+	char *sh = "_putchar";
+
+	while (*sh)
+
 	{
-		return (1);
+
+		_putchar(*sh);
+
+		sh++;
+
 	}
-	else
-	{
-		return (0);
-	}
+
+	_putchar('\n');
+
+
+
+	return (0);
 
 }
