@@ -1,22 +1,11 @@
 #include "main.h"
 
 /**
- *  _strcat - a function that concatenates two strings
- *  @dest: copy to
- *  @src: copy from
- *  Return: two concat strings
+ * reset_to_98 - Takes a pointer to an int and updates
+ *               the value it points to to 98.
+ *               @n: The pointer to an int.
  */
-char *_strcat(char *dest, char *src)
+void reset_to_98(int *n)
 {
-	int i, n;
-
-	for (i = 0; dest[i] != '\0'; i++)
-	{
-	}
-
-	for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
-	{
-	}
-
-	return (dest);
+	*n = 98;
 }
