@@ -4,18 +4,15 @@
  * rev_string - Reverses a string.
  * @s: The string to be reversed.
  */
-void rev_string(char *s)
+void puts2(char *str)
 {
-	int len = 0, index = 0;
-	char tmp;
+	int index = 0, len = 0;
 
-	while (s[index++])
+	while (str[index++])
 		len++;
 
-	for (index = len - 1; index >= len / 2; index--)
-	{
-		tmp = s[index];
-		s[index] = s[len - index - 1];
-		s[len - index - 1] = tmp;
-	}
+	for (index = 0; index < len; index += 2)
+		_putchar(str[index]);
+
+	_putchar('\n');
 }
