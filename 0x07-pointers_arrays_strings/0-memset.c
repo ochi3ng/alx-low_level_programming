@@ -7,8 +7,10 @@
  * @n: number of bytes to fill
  * Return: memory area
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
+<<<<<<< HEAD
 	unsigned int counter;
 
 	counter = 0;
@@ -17,6 +19,17 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[counter] = b;
 		counter++;
+=======
+
+	int size = n; /* only accept positive sizes */
+
+	if (size > 0)
+	{
+		int i;
+
+		for (i = 0; i < size; i++)
+			s[i] = b;
+>>>>>>> 45a705557dae290db0263e6df39122942166bac7
 	}
 
 	return (s);
