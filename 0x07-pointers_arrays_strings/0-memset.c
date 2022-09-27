@@ -9,5 +9,15 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int size = n; /* only accept positive sizes */
-	
+	unsigned int counter;
+
+	counter = 0;
+
+	while (counter < n)
+	{
+		s[counter] = b;
+		counter++;
+	}
+
+	return (s);
+}
