@@ -5,7 +5,7 @@ int _sqrt_recursion(int n);
 
 /**
  * get_sqrt - Finds the natural square root of an inputted number.
-  @num: The number to find the square root of.
+ *  @num: The number to find the square root of.
  * @root: The root to be tested.
  *
  * Return: If the number has a natural square root - the square root.
