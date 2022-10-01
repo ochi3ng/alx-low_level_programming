@@ -2,10 +2,8 @@
 #define MAIN_H
 
 /*
- *
- *  * File: main.h
- *
- *   *Auth:Ochi3ng
+  File: main.h
+ *Auth:ochi3ng
  * Desc: Header file containing the prototypes of all functions
  *       included in the static library libholberton.a.
  */
