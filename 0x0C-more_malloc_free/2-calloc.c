@@ -14,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		eturn (NULL);
-	if (size >= UINT_MAX / nmemb || nmemb >= UINT_MAX / size)
+	if (size >=UINT_MAX / nmemb || nmemb >=UINT_MAX / size)
 		return (NULL);
 	p = malloc(size * nmemb);
 	if (p == NULL)
