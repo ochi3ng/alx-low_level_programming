@@ -7,9 +7,8 @@
  * @age: dog age
  * @owner: dog owner
  * Description: defines dog types
- */
-
-typedef struct do
+ /
+ struct dog
 {
 	char *name;
 	float age;
